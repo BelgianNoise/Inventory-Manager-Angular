@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "InventoryManager"
+    }
+  },
+  "defaultProject": "InventoryManager",
+  "cli": {
+    "analytics": false
+  }
 }
