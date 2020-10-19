@@ -1,3 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import './assets/scss/colors';
 @import './assets/scss/measures';
 
@@ -8,3 +9,10 @@ $app-accent: mat-palette($color-accent-palette, 100, 50, 200);
 $app-warn: mat-palette($mat-red);
 $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 @include angular-material-theme($app-theme);
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
