@@ -1,0 +1,119 @@
+$color-background-normal: #F7F9FA;
+
+$color-foreground-normal: #2F363C;
+$color-foreground-light: #70808F;
+$color-foreground-inverse: #fff;
+
+$color-grey-light: #fff;
+$color-grey-normal: #F7F9FA;
+$color-grey-dark: #F7F9FA;
+
+$color-grey-palette: (
+    50: $color-grey-light,
+  100: $color-grey-normal,
+  200: $color-grey-dark,
+  300: #7faedd,
+  400: #7faedd,
+  500: #7faedd,
+  600: #7faedd,
+  700: #7faedd,
+  800: #7faedd,
+  900: #7faedd,
+  A100: #7faedd,
+  A200: #7faedd,
+  A400: #7faedd,
+  A700: #7faedd,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$color-primary-light: #F7F9FA;
+$color-primary-normal: #70808F;
+$color-primary-dark: #2F363C;
+
+$color-primary-palette: (
+    50: $color-primary-light,
+  100: $color-primary-normal,
+  200: $color-primary-dark,
+  300: #7faedd,
+  400: #7faedd,
+  500: #7faedd,
+  600: #7faedd,
+  700: #7faedd,
+  800: #7faedd,
+  900: #7faedd,
+  A100: #7faedd,
+  A200: #7faedd,
+  A400: #7faedd,
+  A700: #7faedd,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$color-accent-light: #FF998E;
+$color-accent-normal: #FF796E;
+$color-accent-dark: #FF594E;
+
+$color-accent-palette: (
+    50: $color-accent-light,
+  100: $color-accent-normal,
+  200: $color-accent-dark,
+  300: #7faedd,
+  400: #7faedd,
+  500: #7faedd,
+  600: #7faedd,
+  700: #7faedd,
+  800: #7faedd,
+  900: #7faedd,
+  A100: #7faedd,
+  A200: #7faedd,
+  A400: #7faedd,
+  A700: #7faedd,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$color-success-normal: #62a420;
+$color-danger-normal: #e62700;
