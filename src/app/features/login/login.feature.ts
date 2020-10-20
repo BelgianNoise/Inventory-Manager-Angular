@@ -6,7 +6,10 @@ import { LoginAreaComponent } from './components/login-area/login-area.component
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { LoginEffects } from './login.effects';
+import { reducer } from './login.reducer';
 export const loginRoutes: Routes = [
   {
     path: 'login',
@@ -29,6 +32,9 @@ export const loginRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(loginRoutes),
+    // store
+    EffectsModule.forFeature([LoginEffects]),
+    StoreModule.forFeature('login', reducer),
     // Material design Modules
     MatCardModule,
     MatInputModule,
