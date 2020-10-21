@@ -6,7 +6,8 @@ export const ActionTypes = {
 };
 
 export const Login = createAction(
-    ActionTypes.LOGIN
+    ActionTypes.LOGIN,
+    props<{ user: string }>(),
 );
 
 export const LoginFinished = createAction(
