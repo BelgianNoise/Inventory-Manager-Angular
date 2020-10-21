@@ -10,17 +10,18 @@ import { LoginState } from '../../login.state';
 })
 export class LoginAreaComponent implements OnInit {
 
+  public email = '';
+  public password = '';
+
   constructor(
     private loginStore: Store<LoginState>,
   ) { }
 
   ngOnInit(): void { }
 
-  public testNGRX(): void {
-    this.loginStore.dispatch( Login( { user: 'testing' } ) );
-    this.loginStore.select( state => state.user).subscribe(
-      user => console.log(user)
-    );
+  public login(email: string, password: string): void {
+    console.log(email, this.email);
+    this.loginStore.dispatch( Login( { email, password } ) );
   }
 
 }

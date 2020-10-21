@@ -1,6 +1,6 @@
 
 export interface LoginState {
-    user: string;
+    user: firebase.auth.UserCredential;
     isGuest: boolean;
 }
 

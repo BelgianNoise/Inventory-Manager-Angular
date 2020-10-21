@@ -10,6 +10,13 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { LoginEffects } from './features/login/login.effects';
 import { InventoryEffects } from './features/inventory/inventory.effects';
+// Firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
+import { MyCommonModule } from './common/common.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +26,11 @@ import { InventoryEffects } from './features/inventory/inventory.effects';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MyCommonModule,
+    // Firebase
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     // store
     EffectsModule.forRoot([LoginEffects, InventoryEffects]),
     StoreModule.forRoot({}),

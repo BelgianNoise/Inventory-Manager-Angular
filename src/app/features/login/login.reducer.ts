@@ -10,6 +10,12 @@ const loginReduce = createReducer(
       ...state, user, isGuest: false
     }),
   ),
+  on(
+    actions.LogoutFinished,
+    ( state ) => ({
+      ...state, user: null, isGuest: null,
+    })
+  ),
 );
 
 export function reducer(state: LoginState, action: Action): any {

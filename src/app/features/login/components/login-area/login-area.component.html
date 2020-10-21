@@ -1,6 +1,6 @@
 <div>
 
-  <mat-form-field>
+  <mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
     <input matInput type="email" placeholder="john.doe@gmail.com">
   </mat-form-field>
@@ -10,7 +10,9 @@
     <input matInput type="password" placeholder="*********">
   </mat-form-field>
 
-  <button mat-flat-button color="accent" (click)="testNGRX()">
+  <button mat-flat-button color="accent"
+    (click)="login( this.email, this.password )"
+  >
     Sign In
   </button>
 
