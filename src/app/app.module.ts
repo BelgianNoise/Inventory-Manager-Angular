@@ -23,10 +23,10 @@ import { MyCommonModule } from './common/common.module';
     AppComponent,
   ],
   imports: [
+    MyCommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MyCommonModule,
     // Firebase
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,

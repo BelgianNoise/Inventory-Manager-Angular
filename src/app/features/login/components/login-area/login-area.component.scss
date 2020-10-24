@@ -14,14 +14,9 @@ mat-form-field {
   margin: $measure-gutter-large 10%;
 }
 
-::ng-deep.mat-form-field-ripple, ::ng-deep.mat-form-field-underline {
-  /*change color of underline when focused*/
-  background-color: $color-accent-dark !important;
-}
-
-::ng-deep .mat-focused .mat-form-field-label {
-  /*change color of label*/
-  color: $color-accent-dark !important;
+/* Border */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline  {
+  color: $color-accent-dark;
 }
 
 button {

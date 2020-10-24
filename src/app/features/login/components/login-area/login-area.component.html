@@ -1,22 +1,36 @@
 <div>
 
-  <mat-form-field appearance="outline">
-    <mat-label>Email</mat-label>
-    <input matInput type="email" placeholder="john.doe@gmail.com">
-  </mat-form-field>
+  <form formGroup="loginForm">
 
-  <mat-form-field>
-    <mat-label>Password</mat-label>
-    <input matInput type="password" placeholder="*********">
-  </mat-form-field>
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Email</mat-label>
+      <input matInput type="text" name="email"
+        [(ngModel)]="email"
+        placeholder="john.doe@gmail.com"
+        formControlName="email"
+      >
+    </mat-form-field>
 
-  <button mat-flat-button color="accent"
-    (click)="login( this.email, this.password )"
-  >
-    Sign In
-  </button>
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" name="password"
+        [(ngModel)]="password"
+        placeholder="*********"
+        formControlName="password"
+      >
+    </mat-form-field>
+
+    <button mat-flat-button color="accent"
+      (click)="login( this.emailValue, this.passwordValue)"
+      [disabled]="!loginForm.valid"
+    >
+      Sign In
+    </button>
+
+  </form>
 
   <hr> or <hr>
 
   <button mat-flat-button color="accent">Visit as guest...</button>
+
 </div>
